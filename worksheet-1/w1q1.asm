@@ -1,11 +1,12 @@
 .data
-	string: .ascii "Hello world"			# String to be printed
-
+	string: .ascii "Hello World"					# string to print
+	
 .text
 	main:
-		li $v0, 4				# Load print syscall into v0
-		la $a0, string				# Load string pointer into a0
+		li $v0, 4									# print_string syscall
+		la $a0, string								# load string addr into a0
 		syscall
 		
-		li $v0, 10				# Load terminate syscall into v0
+	exit:
+		li $v0, 10									# exit syscall
 		syscall
