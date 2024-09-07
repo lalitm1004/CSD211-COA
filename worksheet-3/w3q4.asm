@@ -22,7 +22,7 @@
 			sb $t2, binaryStr($t1)								# str[i] = t4
 			srl $t0, $t0, 1										# right shift to get next bit
 			subi $t1, $t1, 1									# i--
-			bgt $t1, -1, loop								# loop while (i != 0)
+			bgt $t1, -1, loop									# loop while (i >= 0)
 
 		li $t1, 32
 		sb $zero, binaryStr($t1)								# store null terminating at 33
