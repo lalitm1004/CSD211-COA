@@ -4,7 +4,7 @@
 .text
 	main:
 		li $t1, 1									# load 1 into t1	(i)
-		li $t2, 10									# load 10 into t2	(10)
+		li $t2, 1									# load 10 into t2	(10)
 		li $t3, 2									# load 2 into t3	(2)
 
 		loop:
