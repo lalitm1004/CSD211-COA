@@ -27,7 +27,7 @@
 
 	check_palindrome:
 		sub $t3, $t1, $t0											# strLen -> t3 = end - start
-		subi $t3, $t3, 2											# exclude newline char
+		subi $t3, $t3, 2											# exclude newline char and \0
 
 		move $t4, $t0												# i -> t4 = start
 		add $t5, $t0, $t3											# j -> t5 = start + strLen (doesnt include \n)
