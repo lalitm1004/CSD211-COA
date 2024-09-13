@@ -14,7 +14,8 @@ done
 
 cat "SAMPLE_README.txt" >> "submissions/README.txt"
 
-read -n 1 -s -r -p "make any changes to files and then press any key to continue > "
+read -n 1 -s -r -p "make any changes to files and then press any key to continue >"
+echo ""
 
 tar -czf "submissions/$archivename" submissions/*.txt
 tar -ztvf "submissions/$archivename";
