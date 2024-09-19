@@ -27,8 +27,8 @@
 		jal malloc											# allocate memory for arr
 		la $a1, takeIntInput								# load takeIntInput addr into a0
 		jal iterate
-		la $a1, printElement								# load printElement addr into a0
-		jal iterate
+		#la $a1, printElement								# load printElement addr into a0
+		#jal iterate
 		la $a1, doubleElement
 		jal iterate
 		la $a1, printElement
@@ -118,6 +118,7 @@
 		jr $ra
 
 	printElement:
+		
 		# arrPtr -> s0
 		# numRows -> s1
 		# numCols -> s2
