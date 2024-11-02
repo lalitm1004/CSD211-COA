@@ -1,0 +1,1 @@
+char count > 23
